@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F563A45420A61C0B0034C03F /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F563A45320A61C0B0034C03F /* MapKit.framework */; };
+		F563A45620A61E280034C03F /* PinAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F563A45520A61E280034C03F /* PinAnnotation.swift */; };
 		F5FB829120A6100200606ECE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FB829020A6100200606ECE /* AppDelegate.swift */; };
 		F5FB829320A6100200606ECE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FB829220A6100200606ECE /* ViewController.swift */; };
 		F5FB829620A6100200606ECE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5FB829420A6100200606ECE /* Main.storyboard */; };
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F563A45320A61C0B0034C03F /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		F563A45520A61E280034C03F /* PinAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinAnnotation.swift; sourceTree = "<group>"; };
 		F5FB828D20A6100200606ECE /* parqueape-mobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "parqueape-mobile.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5FB829020A6100200606ECE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F5FB829220A6100200606ECE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F563A45420A61C0B0034C03F /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +79,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F563A45220A61C0B0034C03F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F563A45320A61C0B0034C03F /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F5FB828420A6100200606ECE = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +94,7 @@
 				F5FB82A420A6100300606ECE /* parqueape-mobileTests */,
 				F5FB82AF20A6100300606ECE /* parqueape-mobileUITests */,
 				F5FB828E20A6100200606ECE /* Products */,
+				F563A45220A61C0B0034C03F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +117,7 @@
 				F5FB829720A6100200606ECE /* Assets.xcassets */,
 				F5FB829920A6100300606ECE /* LaunchScreen.storyboard */,
 				F5FB829C20A6100300606ECE /* Info.plist */,
+				F563A45520A61E280034C03F /* PinAnnotation.swift */,
 			);
 			path = "parqueape-mobile";
 			sourceTree = "<group>";
@@ -193,6 +208,11 @@
 				TargetAttributes = {
 					F5FB828C20A6100200606ECE = {
 						CreatedOnToolsVersion = 9.3;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					F5FB82A020A6100300606ECE = {
 						CreatedOnToolsVersion = 9.3;
@@ -257,6 +277,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F5FB829320A6100200606ECE /* ViewController.swift in Sources */,
+				F563A45620A61E280034C03F /* PinAnnotation.swift in Sources */,
 				F5FB829120A6100200606ECE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

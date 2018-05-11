@@ -7,19 +7,30 @@
 //
 
 import UIKit
+import MapKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var maps: MKMapView!
+    let regionRadius: CLLocationDistance = 1000
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        let inicialLocation = CLLocation(latitude: 21.282778, longitude: -157.829444)
+        centerMapOnLocation(location: inicialLocation)
+        // maps.showsUserLocation = true
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
+    
+    func centerMapOnLocation(location: CLLocation) {
+        let coordinateRegion = MKCoordinateRegionMakeWithDistance(location.coordinate, regionRadius, regionRadius)
+        maps.setRegion(coordinateRegion, animated: true)
+    }
 
 }
 
