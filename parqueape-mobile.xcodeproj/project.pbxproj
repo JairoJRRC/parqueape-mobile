@@ -1,0 +1,583 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F5FB829120A6100200606ECE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FB829020A6100200606ECE /* AppDelegate.swift */; };
+		F5FB829320A6100200606ECE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FB829220A6100200606ECE /* ViewController.swift */; };
+		F5FB829620A6100200606ECE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5FB829420A6100200606ECE /* Main.storyboard */; };
+		F5FB829820A6100200606ECE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5FB829720A6100200606ECE /* Assets.xcassets */; };
+		F5FB829B20A6100300606ECE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5FB829920A6100300606ECE /* LaunchScreen.storyboard */; };
+		F5FB82A620A6100300606ECE /* parqueape_mobileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FB82A520A6100300606ECE /* parqueape_mobileTests.swift */; };
+		F5FB82B120A6100300606ECE /* parqueape_mobileUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FB82B020A6100300606ECE /* parqueape_mobileUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F5FB82A220A6100300606ECE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F5FB828520A6100200606ECE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F5FB828C20A6100200606ECE;
+			remoteInfo = "parqueape-mobile";
+		};
+		F5FB82AD20A6100300606ECE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F5FB828520A6100200606ECE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F5FB828C20A6100200606ECE;
+			remoteInfo = "parqueape-mobile";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F5FB828D20A6100200606ECE /* parqueape-mobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "parqueape-mobile.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5FB829020A6100200606ECE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F5FB829220A6100200606ECE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F5FB829520A6100200606ECE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F5FB829720A6100200606ECE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F5FB829A20A6100300606ECE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F5FB829C20A6100300606ECE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5FB82A120A6100300606ECE /* parqueape-mobileTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "parqueape-mobileTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5FB82A520A6100300606ECE /* parqueape_mobileTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = parqueape_mobileTests.swift; sourceTree = "<group>"; };
+		F5FB82A720A6100300606ECE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5FB82AC20A6100300606ECE /* parqueape-mobileUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "parqueape-mobileUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5FB82B020A6100300606ECE /* parqueape_mobileUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = parqueape_mobileUITests.swift; sourceTree = "<group>"; };
+		F5FB82B220A6100300606ECE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F5FB828A20A6100200606ECE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5FB829E20A6100300606ECE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5FB82A920A6100300606ECE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F5FB828420A6100200606ECE = {
+			isa = PBXGroup;
+			children = (
+				F5FB828F20A6100200606ECE /* parqueape-mobile */,
+				F5FB82A420A6100300606ECE /* parqueape-mobileTests */,
+				F5FB82AF20A6100300606ECE /* parqueape-mobileUITests */,
+				F5FB828E20A6100200606ECE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F5FB828E20A6100200606ECE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F5FB828D20A6100200606ECE /* parqueape-mobile.app */,
+				F5FB82A120A6100300606ECE /* parqueape-mobileTests.xctest */,
+				F5FB82AC20A6100300606ECE /* parqueape-mobileUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F5FB828F20A6100200606ECE /* parqueape-mobile */ = {
+			isa = PBXGroup;
+			children = (
+				F5FB829020A6100200606ECE /* AppDelegate.swift */,
+				F5FB829220A6100200606ECE /* ViewController.swift */,
+				F5FB829420A6100200606ECE /* Main.storyboard */,
+				F5FB829720A6100200606ECE /* Assets.xcassets */,
+				F5FB829920A6100300606ECE /* LaunchScreen.storyboard */,
+				F5FB829C20A6100300606ECE /* Info.plist */,
+			);
+			path = "parqueape-mobile";
+			sourceTree = "<group>";
+		};
+		F5FB82A420A6100300606ECE /* parqueape-mobileTests */ = {
+			isa = PBXGroup;
+			children = (
+				F5FB82A520A6100300606ECE /* parqueape_mobileTests.swift */,
+				F5FB82A720A6100300606ECE /* Info.plist */,
+			);
+			path = "parqueape-mobileTests";
+			sourceTree = "<group>";
+		};
+		F5FB82AF20A6100300606ECE /* parqueape-mobileUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F5FB82B020A6100300606ECE /* parqueape_mobileUITests.swift */,
+				F5FB82B220A6100300606ECE /* Info.plist */,
+			);
+			path = "parqueape-mobileUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F5FB828C20A6100200606ECE /* parqueape-mobile */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5FB82B520A6100300606ECE /* Build configuration list for PBXNativeTarget "parqueape-mobile" */;
+			buildPhases = (
+				F5FB828920A6100200606ECE /* Sources */,
+				F5FB828A20A6100200606ECE /* Frameworks */,
+				F5FB828B20A6100200606ECE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "parqueape-mobile";
+			productName = "parqueape-mobile";
+			productReference = F5FB828D20A6100200606ECE /* parqueape-mobile.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F5FB82A020A6100300606ECE /* parqueape-mobileTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5FB82B820A6100300606ECE /* Build configuration list for PBXNativeTarget "parqueape-mobileTests" */;
+			buildPhases = (
+				F5FB829D20A6100300606ECE /* Sources */,
+				F5FB829E20A6100300606ECE /* Frameworks */,
+				F5FB829F20A6100300606ECE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F5FB82A320A6100300606ECE /* PBXTargetDependency */,
+			);
+			name = "parqueape-mobileTests";
+			productName = "parqueape-mobileTests";
+			productReference = F5FB82A120A6100300606ECE /* parqueape-mobileTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F5FB82AB20A6100300606ECE /* parqueape-mobileUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5FB82BB20A6100300606ECE /* Build configuration list for PBXNativeTarget "parqueape-mobileUITests" */;
+			buildPhases = (
+				F5FB82A820A6100300606ECE /* Sources */,
+				F5FB82A920A6100300606ECE /* Frameworks */,
+				F5FB82AA20A6100300606ECE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F5FB82AE20A6100300606ECE /* PBXTargetDependency */,
+			);
+			name = "parqueape-mobileUITests";
+			productName = "parqueape-mobileUITests";
+			productReference = F5FB82AC20A6100300606ECE /* parqueape-mobileUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F5FB828520A6100200606ECE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = user140364;
+				TargetAttributes = {
+					F5FB828C20A6100200606ECE = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					F5FB82A020A6100300606ECE = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = F5FB828C20A6100200606ECE;
+					};
+					F5FB82AB20A6100300606ECE = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = F5FB828C20A6100200606ECE;
+					};
+				};
+			};
+			buildConfigurationList = F5FB828820A6100200606ECE /* Build configuration list for PBXProject "parqueape-mobile" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F5FB828420A6100200606ECE;
+			productRefGroup = F5FB828E20A6100200606ECE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F5FB828C20A6100200606ECE /* parqueape-mobile */,
+				F5FB82A020A6100300606ECE /* parqueape-mobileTests */,
+				F5FB82AB20A6100300606ECE /* parqueape-mobileUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F5FB828B20A6100200606ECE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5FB829B20A6100300606ECE /* LaunchScreen.storyboard in Resources */,
+				F5FB829820A6100200606ECE /* Assets.xcassets in Resources */,
+				F5FB829620A6100200606ECE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5FB829F20A6100300606ECE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5FB82AA20A6100300606ECE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F5FB828920A6100200606ECE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5FB829320A6100200606ECE /* ViewController.swift in Sources */,
+				F5FB829120A6100200606ECE /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5FB829D20A6100300606ECE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5FB82A620A6100300606ECE /* parqueape_mobileTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5FB82A820A6100300606ECE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5FB82B120A6100300606ECE /* parqueape_mobileUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F5FB82A320A6100300606ECE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F5FB828C20A6100200606ECE /* parqueape-mobile */;
+			targetProxy = F5FB82A220A6100300606ECE /* PBXContainerItemProxy */;
+		};
+		F5FB82AE20A6100300606ECE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F5FB828C20A6100200606ECE /* parqueape-mobile */;
+			targetProxy = F5FB82AD20A6100300606ECE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F5FB829420A6100200606ECE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F5FB829520A6100200606ECE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F5FB829920A6100300606ECE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F5FB829A20A6100300606ECE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F5FB82B320A6100300606ECE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F5FB82B420A6100300606ECE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F5FB82B620A6100300606ECE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "parqueape-mobile/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cibertec.parqueape-mobile";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F5FB82B720A6100300606ECE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "parqueape-mobile/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cibertec.parqueape-mobile";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F5FB82B920A6100300606ECE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "parqueape-mobileTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cibertec.parqueape-mobileTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/parqueape-mobile.app/parqueape-mobile";
+			};
+			name = Debug;
+		};
+		F5FB82BA20A6100300606ECE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "parqueape-mobileTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cibertec.parqueape-mobileTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/parqueape-mobile.app/parqueape-mobile";
+			};
+			name = Release;
+		};
+		F5FB82BC20A6100300606ECE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "parqueape-mobileUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cibertec.parqueape-mobileUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "parqueape-mobile";
+			};
+			name = Debug;
+		};
+		F5FB82BD20A6100300606ECE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "parqueape-mobileUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cibertec.parqueape-mobileUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "parqueape-mobile";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F5FB828820A6100200606ECE /* Build configuration list for PBXProject "parqueape-mobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5FB82B320A6100300606ECE /* Debug */,
+				F5FB82B420A6100300606ECE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F5FB82B520A6100300606ECE /* Build configuration list for PBXNativeTarget "parqueape-mobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5FB82B620A6100300606ECE /* Debug */,
+				F5FB82B720A6100300606ECE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F5FB82B820A6100300606ECE /* Build configuration list for PBXNativeTarget "parqueape-mobileTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5FB82B920A6100300606ECE /* Debug */,
+				F5FB82BA20A6100300606ECE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F5FB82BB20A6100300606ECE /* Build configuration list for PBXNativeTarget "parqueape-mobileUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5FB82BC20A6100300606ECE /* Debug */,
+				F5FB82BD20A6100300606ECE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F5FB828520A6100200606ECE /* Project object */;
+}
