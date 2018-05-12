@@ -47,7 +47,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="uli-Om-L1L">
-                                <rect key="frame" x="0.0" y="69" width="375" height="598"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="338"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ParkingTableViewCell" rowHeight="75" id="Krs-d7-Rds" customClass="ParkingTableViewCell" customModule="parqueape_mobile" customModuleProvider="target">
@@ -92,12 +92,41 @@
                                     <outlet property="delegate" destination="bRq-nX-CWA" id="Kw8-Pq-4AL"/>
                                 </connections>
                             </tableView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="4Kf-l5-K4X">
+                                <rect key="frame" x="0.0" y="338" width="375" height="329"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="9Sv-3g-BYh">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CollectionViewCell" id="G9f-eN-OUU" customClass="CollectionViewCell" customModule="parqueape_mobile" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </view>
+                                        <color key="backgroundColor" red="0.3302668186465374" green="0.3649963011365116" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="bRq-nX-CWA" id="Ovn-36-RRe"/>
+                                    <outlet property="delegate" destination="bRq-nX-CWA" id="Y3E-7D-beE"/>
+                                </connections>
+                            </collectionView>
                         </subviews>
                         <constraints>
                             <constraint firstItem="uli-Om-L1L" firstAttribute="trailing" secondItem="ydU-0g-5h5" secondAttribute="trailing" id="7sl-kr-s2K"/>
+                            <constraint firstItem="uli-Om-L1L" firstAttribute="top" secondItem="6Pe-2a-MEz" secondAttribute="top" id="Cab-TN-luh"/>
+                            <constraint firstItem="4Kf-l5-K4X" firstAttribute="leading" secondItem="ydU-0g-5h5" secondAttribute="leading" id="ET5-UC-lUA"/>
+                            <constraint firstItem="4Kf-l5-K4X" firstAttribute="bottom" secondItem="ydU-0g-5h5" secondAttribute="bottom" id="Nds-uI-15z"/>
                             <constraint firstItem="uli-Om-L1L" firstAttribute="leading" secondItem="ydU-0g-5h5" secondAttribute="leading" id="OQ3-as-q7u"/>
-                            <constraint firstItem="uli-Om-L1L" firstAttribute="top" secondItem="ydU-0g-5h5" secondAttribute="top" constant="49" id="cJL-F6-YWU"/>
-                            <constraint firstItem="uli-Om-L1L" firstAttribute="bottom" secondItem="ydU-0g-5h5" secondAttribute="bottom" id="swt-rB-5wZ"/>
+                            <constraint firstItem="4Kf-l5-K4X" firstAttribute="top" secondItem="uli-Om-L1L" secondAttribute="bottom" id="RO5-L4-OXM"/>
+                            <constraint firstItem="ydU-0g-5h5" firstAttribute="bottom" secondItem="uli-Om-L1L" secondAttribute="bottom" constant="329" id="l5p-SF-LQm"/>
+                            <constraint firstItem="4Kf-l5-K4X" firstAttribute="trailing" secondItem="ydU-0g-5h5" secondAttribute="trailing" id="vc4-ZQ-yAx"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ydU-0g-5h5"/>
                     </view>

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		F563A45420A61C0B0034C03F /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F563A45320A61C0B0034C03F /* MapKit.framework */; };
 		F563A45620A61E280034C03F /* PinAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F563A45520A61E280034C03F /* PinAnnotation.swift */; };
+		F56CF91920A74C3100B6DFC2 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56CF91820A74C3100B6DFC2 /* CollectionViewCell.swift */; };
 		F59BECB620A7366600C4F006 /* ListParkingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59BECB520A7366600C4F006 /* ListParkingViewController.swift */; };
 		F59BECBA20A7376E00C4F006 /* ParkingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59BECB920A7376E00C4F006 /* ParkingTableViewCell.swift */; };
 		F5FB829120A6100200606ECE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FB829020A6100200606ECE /* AppDelegate.swift */; };
@@ -40,6 +41,7 @@
 /* Begin PBXFileReference section */
 		F563A45320A61C0B0034C03F /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		F563A45520A61E280034C03F /* PinAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinAnnotation.swift; sourceTree = "<group>"; };
+		F56CF91820A74C3100B6DFC2 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		F59BECB520A7366600C4F006 /* ListParkingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListParkingViewController.swift; sourceTree = "<group>"; };
 		F59BECB920A7376E00C4F006 /* ParkingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingTableViewCell.swift; sourceTree = "<group>"; };
 		F5FB828D20A6100200606ECE /* parqueape-mobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "parqueape-mobile.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -124,6 +126,7 @@
 				F5FB829C20A6100300606ECE /* Info.plist */,
 				F563A45520A61E280034C03F /* PinAnnotation.swift */,
 				F59BECB920A7376E00C4F006 /* ParkingTableViewCell.swift */,
+				F56CF91820A74C3100B6DFC2 /* CollectionViewCell.swift */,
 			);
 			path = "parqueape-mobile";
 			sourceTree = "<group>";
@@ -284,6 +287,7 @@
 			files = (
 				F5FB829320A6100200606ECE /* ViewController.swift in Sources */,
 				F59BECBA20A7376E00C4F006 /* ParkingTableViewCell.swift in Sources */,
+				F56CF91920A74C3100B6DFC2 /* CollectionViewCell.swift in Sources */,
 				F59BECB620A7366600C4F006 /* ListParkingViewController.swift in Sources */,
 				F563A45620A61E280034C03F /* PinAnnotation.swift in Sources */,
 				F5FB829120A6100200606ECE /* AppDelegate.swift in Sources */,
