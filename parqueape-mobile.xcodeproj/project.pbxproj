@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		57FF5F9D8A8818E39D72480B /* Pods_parqueape_mobile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FADD8ADBDBF41E1C88691F5D /* Pods_parqueape_mobile.framework */; };
 		F563A45420A61C0B0034C03F /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F563A45320A61C0B0034C03F /* MapKit.framework */; };
 		F563A45620A61E280034C03F /* PinAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F563A45520A61E280034C03F /* PinAnnotation.swift */; };
 		F56CF91920A74C3100B6DFC2 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56CF91820A74C3100B6DFC2 /* CollectionViewCell.swift */; };
+		F581B78120AE045A0018CCB2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F581B78020AE045A0018CCB2 /* LoginViewController.swift */; };
+		F581B78320AE05300018CCB2 /* PodFile in Resources */ = {isa = PBXBuildFile; fileRef = F581B78220AE05300018CCB2 /* PodFile */; };
 		F59BECB620A7366600C4F006 /* ListParkingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59BECB520A7366600C4F006 /* ListParkingViewController.swift */; };
 		F59BECBA20A7376E00C4F006 /* ParkingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59BECB920A7376E00C4F006 /* ParkingTableViewCell.swift */; };
 		F5FB829120A6100200606ECE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FB829020A6100200606ECE /* AppDelegate.swift */; };
@@ -39,9 +42,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8065F5A38A1DEA6D3F9F2FDB /* Pods-parqueape-mobile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-parqueape-mobile.debug.xcconfig"; path = "Pods/Target Support Files/Pods-parqueape-mobile/Pods-parqueape-mobile.debug.xcconfig"; sourceTree = "<group>"; };
+		932C6545737E5CC2D5499223 /* Pods-parqueape-mobile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-parqueape-mobile.release.xcconfig"; path = "Pods/Target Support Files/Pods-parqueape-mobile/Pods-parqueape-mobile.release.xcconfig"; sourceTree = "<group>"; };
 		F563A45320A61C0B0034C03F /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		F563A45520A61E280034C03F /* PinAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinAnnotation.swift; sourceTree = "<group>"; };
 		F56CF91820A74C3100B6DFC2 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		F581B78020AE045A0018CCB2 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		F581B78220AE05300018CCB2 /* PodFile */ = {isa = PBXFileReference; lastKnownFileType = text; path = PodFile; sourceTree = "<group>"; };
 		F59BECB520A7366600C4F006 /* ListParkingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListParkingViewController.swift; sourceTree = "<group>"; };
 		F59BECB920A7376E00C4F006 /* ParkingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingTableViewCell.swift; sourceTree = "<group>"; };
 		F5FB828D20A6100200606ECE /* parqueape-mobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "parqueape-mobile.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -57,6 +64,7 @@
 		F5FB82AC20A6100300606ECE /* parqueape-mobileUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "parqueape-mobileUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5FB82B020A6100300606ECE /* parqueape_mobileUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = parqueape_mobileUITests.swift; sourceTree = "<group>"; };
 		F5FB82B220A6100300606ECE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FADD8ADBDBF41E1C88691F5D /* Pods_parqueape_mobile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_parqueape_mobile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +73,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F563A45420A61C0B0034C03F /* MapKit.framework in Frameworks */,
+				57FF5F9D8A8818E39D72480B /* Pods_parqueape_mobile.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,10 +94,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EEB43FEA1A49591A4BF1BA09 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8065F5A38A1DEA6D3F9F2FDB /* Pods-parqueape-mobile.debug.xcconfig */,
+				932C6545737E5CC2D5499223 /* Pods-parqueape-mobile.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		F563A45220A61C0B0034C03F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				F563A45320A61C0B0034C03F /* MapKit.framework */,
+				FADD8ADBDBF41E1C88691F5D /* Pods_parqueape_mobile.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -96,11 +115,13 @@
 		F5FB828420A6100200606ECE = {
 			isa = PBXGroup;
 			children = (
+				F581B78220AE05300018CCB2 /* PodFile */,
 				F5FB828F20A6100200606ECE /* parqueape-mobile */,
 				F5FB82A420A6100300606ECE /* parqueape-mobileTests */,
 				F5FB82AF20A6100300606ECE /* parqueape-mobileUITests */,
 				F5FB828E20A6100200606ECE /* Products */,
 				F563A45220A61C0B0034C03F /* Frameworks */,
+				EEB43FEA1A49591A4BF1BA09 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -127,6 +148,7 @@
 				F563A45520A61E280034C03F /* PinAnnotation.swift */,
 				F59BECB920A7376E00C4F006 /* ParkingTableViewCell.swift */,
 				F56CF91820A74C3100B6DFC2 /* CollectionViewCell.swift */,
+				F581B78020AE045A0018CCB2 /* LoginViewController.swift */,
 			);
 			path = "parqueape-mobile";
 			sourceTree = "<group>";
@@ -156,9 +178,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F5FB82B520A6100300606ECE /* Build configuration list for PBXNativeTarget "parqueape-mobile" */;
 			buildPhases = (
+				F3B8C59C4AB9C2BC62A4C2E7 /* [CP] Check Pods Manifest.lock */,
 				F5FB828920A6100200606ECE /* Sources */,
 				F5FB828A20A6100200606ECE /* Frameworks */,
 				F5FB828B20A6100200606ECE /* Resources */,
+				EA6B9B3A8E2FE78C76C792FB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -260,6 +284,7 @@
 			files = (
 				F5FB829B20A6100300606ECE /* LaunchScreen.storyboard in Resources */,
 				F5FB829820A6100200606ECE /* Assets.xcassets in Resources */,
+				F581B78320AE05300018CCB2 /* PodFile in Resources */,
 				F5FB829620A6100200606ECE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,11 +305,59 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		EA6B9B3A8E2FE78C76C792FB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-parqueape-mobile/Pods-parqueape-mobile-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookCore/FacebookCore.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookLogin/FacebookLogin.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookLogin.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-parqueape-mobile/Pods-parqueape-mobile-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F3B8C59C4AB9C2BC62A4C2E7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-parqueape-mobile-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F5FB828920A6100200606ECE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F581B78120AE045A0018CCB2 /* LoginViewController.swift in Sources */,
 				F5FB829320A6100200606ECE /* ViewController.swift in Sources */,
 				F59BECBA20A7376E00C4F006 /* ParkingTableViewCell.swift in Sources */,
 				F56CF91920A74C3100B6DFC2 /* CollectionViewCell.swift in Sources */,
@@ -461,6 +534,7 @@
 		};
 		F5FB82B620A6100300606ECE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8065F5A38A1DEA6D3F9F2FDB /* Pods-parqueape-mobile.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -478,6 +552,7 @@
 		};
 		F5FB82B720A6100300606ECE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 932C6545737E5CC2D5499223 /* Pods-parqueape-mobile.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
