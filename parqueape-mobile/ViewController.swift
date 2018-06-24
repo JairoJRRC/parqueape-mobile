@@ -13,21 +13,31 @@ class ViewController: UIViewController {
 
     let locationManager = CLLocationManager()
     @IBOutlet weak var maps: MKMapView!
-    
-    
-    //let regionRadius: CLLocationDistance = 1000
+    var data: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //let inicialLocation = CLLocation(latitude: 21.282778, longitude: -157.829444)
-        //centerMapOnLocation(location: inicialLocation)
-        // maps.showsUserLocation = true
-        
         maps.showsUserLocation = true
         
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
         locationManager.startUpdatingLocation()
+        
+        let sikkim=CityLocation(title: "Sikkim", coordinate: CLLocationCoordinate2D(latitude: 27.8236356, longitude:88.556531))
+        let delhi = CityLocation(title: "Delhi", coordinate: CLLocationCoordinate2D(latitude: 28.619570, longitude: 77.088104))
+        let kashmir = CityLocation(title: "Kahmir", coordinate: CLLocationCoordinate2D(latitude: 34.1490875, longitude: 74.0789389))
+        let gujrat = CityLocation(title: "Gujrat", coordinate: CLLocationCoordinate2D(latitude: 22.258652, longitude: 71.1923805))
+        let kerala = CityLocation(title: "Kerala", coordinate: CLLocationCoordinate2D(latitude: 9.931233, longitude:76.267303))
+        
+        maps.addAnnotation(sikkim)
+        maps.addAnnotation(delhi)
+        maps.addAnnotation(kashmir)
+        maps.addAnnotation(gujrat)
+        maps.addAnnotation(kerala)
+        
+        maps.addAnnotations([sikkim, delhi, kashmir, gujrat, kerala])
+        
+        
     }
 
     @IBAction func localizame(_ sender: Any) {
@@ -36,12 +46,6 @@ class ViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-    
-    
-    //func centerMapOnLocation(location: CLLocation) {
-    //    let coordinateRegion = MKCoordinateRegionMakeWithDistance(location.coordinate, regionRadius, regionRadius)
-    //    maps.setRegion(coordinateRegion, animated: true)
-    //}
     
     func initLocation() {
         

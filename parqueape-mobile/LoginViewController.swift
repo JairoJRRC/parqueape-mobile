@@ -41,14 +41,25 @@ class LoginViewController: UIViewController {
     }
     
     func getFBUserData(){
+        performSegue(withIdentifier: "maps", sender: self)
         if((FBSDKAccessToken.current()) != nil){
             FBSDKGraphRequest(graphPath: "me", parameters: ["fields": "id, name, picture.type(large), email"]).start(completionHandler: { (connection, result, error) -> Void in
+                
                 if (error == nil){
                     self.dict = result as! [String : AnyObject]
                     print(result!)
                     print(self.dict)
+                    
                 }
             })
+            
+        }
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        print("entrooooooo")
+        if segue.identifier == "maps" {
+            let vc = segue.destination as! ViewController
+            vc.data = "Data you want to pass"
         }
     }
 

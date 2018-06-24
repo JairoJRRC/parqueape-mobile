@@ -1,5 +1,0 @@
-import MapKit
-
-class PinAnnotation {
-    
-}
