@@ -9,34 +9,42 @@
 import UIKit
 import MapKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, MKMapViewDelegate {
 
     let locationManager = CLLocationManager()
     @IBOutlet weak var maps: MKMapView!
     var data: String?
+    var idGarage: Int16?
+    var selectedAnnotation: CityLocation?
+    let urlListParking = "https://fierce-fortress-85627.herokuapp.com/api/garages"
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        maps.delegate = self
         maps.showsUserLocation = true
         
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
         locationManager.startUpdatingLocation()
         
-        let sikkim=CityLocation(title: "Sikkim", coordinate: CLLocationCoordinate2D(latitude: 27.8236356, longitude:88.556531))
-        let delhi = CityLocation(title: "Delhi", coordinate: CLLocationCoordinate2D(latitude: 28.619570, longitude: 77.088104))
-        let kashmir = CityLocation(title: "Kahmir", coordinate: CLLocationCoordinate2D(latitude: 34.1490875, longitude: 74.0789389))
-        let gujrat = CityLocation(title: "Gujrat", coordinate: CLLocationCoordinate2D(latitude: 22.258652, longitude: 71.1923805))
-        let kerala = CityLocation(title: "Kerala", coordinate: CLLocationCoordinate2D(latitude: 9.931233, longitude:76.267303))
+        if !NetworkManager.isConnectedToNetwork(){
+            return
+        }
         
-        maps.addAnnotation(sikkim)
-        maps.addAnnotation(delhi)
-        maps.addAnnotation(kashmir)
-        maps.addAnnotation(gujrat)
-        maps.addAnnotation(kerala)
-        
-        maps.addAnnotations([sikkim, delhi, kashmir, gujrat, kerala])
-        
+        NetworkManager.sharedInstance.callUrlWithCompletion(url: urlListParking, params: nil, completion: { (finished, response) in
+            
+            let coordinates : String = response["coordinates"] as! String
+            let coordinatesArr : [String] = coordinates.components(separatedBy: ",")
+            let lat : Double = (coordinatesArr[0] as NSString).doubleValue
+            let long : Double = (coordinatesArr[1] as NSString).doubleValue
+            
+            let locationCity = CityLocation(title: response["title"] as! String, idGarage: response["id"] as! Int16, coordinate: CLLocationCoordinate2D(latitude: lat, longitude:long))
+            
+            self.maps.addAnnotation(locationCity)
+            self.maps.addAnnotations([locationCity])
+            
+        }, method: .get)
         
     }
 
@@ -73,6 +81,21 @@ class ViewController: UIViewController {
         self.present(alerta, animated: true, completion: nil)
     }
     
+    func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
+        if let annotation = view.annotation as? CityLocation {
+             self.idGarage = annotation.idGarage
+             performSegue(withIdentifier: "garage", sender: self)
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "garage" {
+            let destino = segue.destination as! DetailParkingViewController
+            destino.idGarage = String(self.idGarage!)
+            
+        }
+    }
+    
 }
 
 extension ViewController : CLLocationManagerDelegate {
@@ -81,4 +104,3 @@ extension ViewController : CLLocationManagerDelegate {
         print(locations[0])
     }
 }
-

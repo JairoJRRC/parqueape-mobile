@@ -34,8 +34,16 @@ class NetworkManager{
             print(response.response?.statusCode as Any)
             
             if(response.response?.statusCode == 200){
-                print(response.result.value as Any)
-                completion(true, response.result.value as! Dictionary)
+                
+                if let objJson = response.result.value as? NSArray {
+                    print(objJson as Any)
+                    for element in objJson {
+                        completion(true, element as! Dictionary)
+                    }
+                } else if let dictionaryVersion = response.result.value as? NSDictionary{
+                        completion(true, dictionaryVersion as! Dictionary)
+                }
+                
             }else{
                 completion(false, Dictionary<String,AnyObject>())
             }

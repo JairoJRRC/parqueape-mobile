@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		57FF5F9D8A8818E39D72480B /* Pods_parqueape_mobile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FADD8ADBDBF41E1C88691F5D /* Pods_parqueape_mobile.framework */; };
+		F539B5FE20E1738A00092728 /* ReservaExitosaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F539B5FD20E1738A00092728 /* ReservaExitosaViewController.swift */; };
 		F563A45420A61C0B0034C03F /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F563A45320A61C0B0034C03F /* MapKit.framework */; };
 		F56CF91920A74C3100B6DFC2 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56CF91820A74C3100B6DFC2 /* CollectionViewCell.swift */; };
 		F581B78120AE045A0018CCB2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F581B78020AE045A0018CCB2 /* LoginViewController.swift */; };
@@ -20,6 +21,8 @@
 		F5D2702320C35B72004006AB /* CollectionRestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D2702220C35B72004006AB /* CollectionRestViewController.swift */; };
 		F5D2702520C35C03004006AB /* RestTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D2702420C35C03004006AB /* RestTableViewCell.swift */; };
 		F5D2702720C35C8C004006AB /* RestCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D2702620C35C8C004006AB /* RestCollectionViewCell.swift */; };
+		F5E98D5E20E0502100B87EC4 /* DetailParkingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E98D5D20E0502100B87EC4 /* DetailParkingViewController.swift */; };
+		F5E98D6020E056F200B87EC4 /* ReservaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E98D5F20E056F200B87EC4 /* ReservaViewController.swift */; };
 		F5FB829120A6100200606ECE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FB829020A6100200606ECE /* AppDelegate.swift */; };
 		F5FB829320A6100200606ECE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FB829220A6100200606ECE /* ViewController.swift */; };
 		F5FB829620A6100200606ECE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5FB829420A6100200606ECE /* Main.storyboard */; };
@@ -49,6 +52,7 @@
 /* Begin PBXFileReference section */
 		8065F5A38A1DEA6D3F9F2FDB /* Pods-parqueape-mobile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-parqueape-mobile.debug.xcconfig"; path = "Pods/Target Support Files/Pods-parqueape-mobile/Pods-parqueape-mobile.debug.xcconfig"; sourceTree = "<group>"; };
 		932C6545737E5CC2D5499223 /* Pods-parqueape-mobile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-parqueape-mobile.release.xcconfig"; path = "Pods/Target Support Files/Pods-parqueape-mobile/Pods-parqueape-mobile.release.xcconfig"; sourceTree = "<group>"; };
+		F539B5FD20E1738A00092728 /* ReservaExitosaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservaExitosaViewController.swift; sourceTree = "<group>"; };
 		F563A45320A61C0B0034C03F /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		F56CF91820A74C3100B6DFC2 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		F581B78020AE045A0018CCB2 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -61,6 +65,8 @@
 		F5D2702220C35B72004006AB /* CollectionRestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionRestViewController.swift; sourceTree = "<group>"; };
 		F5D2702420C35C03004006AB /* RestTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestTableViewCell.swift; sourceTree = "<group>"; };
 		F5D2702620C35C8C004006AB /* RestCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestCollectionViewCell.swift; sourceTree = "<group>"; };
+		F5E98D5D20E0502100B87EC4 /* DetailParkingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailParkingViewController.swift; sourceTree = "<group>"; };
+		F5E98D5F20E056F200B87EC4 /* ReservaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservaViewController.swift; sourceTree = "<group>"; };
 		F5FB828D20A6100200606ECE /* parqueape-mobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "parqueape-mobile.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5FB829020A6100200606ECE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F5FB829220A6100200606ECE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -164,6 +170,9 @@
 				F5D2702420C35C03004006AB /* RestTableViewCell.swift */,
 				F5D2702620C35C8C004006AB /* RestCollectionViewCell.swift */,
 				F5AE87B920E027E10076414C /* CityLocation.swift */,
+				F5E98D5D20E0502100B87EC4 /* DetailParkingViewController.swift */,
+				F5E98D5F20E056F200B87EC4 /* ReservaViewController.swift */,
+				F539B5FD20E1738A00092728 /* ReservaExitosaViewController.swift */,
 			);
 			path = "parqueape-mobile";
 			sourceTree = "<group>";
@@ -383,12 +392,15 @@
 				F5D2702120C35B35004006AB /* TableRestViewController.swift in Sources */,
 				F581B78120AE045A0018CCB2 /* LoginViewController.swift in Sources */,
 				F5FB829320A6100200606ECE /* ViewController.swift in Sources */,
+				F5E98D6020E056F200B87EC4 /* ReservaViewController.swift in Sources */,
 				F5D2702720C35C8C004006AB /* RestCollectionViewCell.swift in Sources */,
 				F59BECBA20A7376E00C4F006 /* ParkingTableViewCell.swift in Sources */,
 				F56CF91920A74C3100B6DFC2 /* CollectionViewCell.swift in Sources */,
+				F539B5FE20E1738A00092728 /* ReservaExitosaViewController.swift in Sources */,
 				F5D2701F20C35973004006AB /* NetworkManager.swift in Sources */,
 				F5D2702520C35C03004006AB /* RestTableViewCell.swift in Sources */,
 				F59BECB620A7366600C4F006 /* ListParkingViewController.swift in Sources */,
+				F5E98D5E20E0502100B87EC4 /* DetailParkingViewController.swift in Sources */,
 				F5FB829120A6100200606ECE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
