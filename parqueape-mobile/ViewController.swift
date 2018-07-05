@@ -1,19 +1,19 @@
-//
-//  ViewController.swift
-//  parqueape-mobile
-//
-//  Created by user140364 on 5/11/18.
-//  Copyright © 2018 user140364. All rights reserved.
-//
 
 import UIKit
 import MapKit
+import SDWebImage
 
 class ViewController: UIViewController, MKMapViewDelegate {
-
+    
+    @IBOutlet weak var photoFacebook: UIImageView!
+    @IBOutlet weak var namesFacebook: UILabel!
+    
     let locationManager = CLLocationManager()
     @IBOutlet weak var maps: MKMapView!
-    var data: String?
+    
+    var names: String?
+    var photo: String?
+    
     var idGarage: Int16?
     var selectedAnnotation: CityLocation?
     let urlListParking = "https://fierce-fortress-85627.herokuapp.com/api/garages"
@@ -23,6 +23,14 @@ class ViewController: UIViewController, MKMapViewDelegate {
         
         maps.delegate = self
         maps.showsUserLocation = true
+        
+        self.namesFacebook.text = names
+        self.photoFacebook.sd_setImage(with: URL(string: photo as! String), completed: nil)
+        self.photoFacebook.layer.borderWidth = 1
+        self.photoFacebook.layer.masksToBounds = false
+        self.photoFacebook.layer.borderColor = UIColor.black.cgColor
+        self.photoFacebook.layer.cornerRadius = self.photoFacebook.frame.height/2
+        self.photoFacebook.clipsToBounds = true
         
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters

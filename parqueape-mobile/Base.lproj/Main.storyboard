@@ -169,17 +169,31 @@
                     <view key="view" contentMode="scaleToFill" id="nf9-0b-8Rs">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dRk-wW-Zgz" customClass="FBSDKLoginButton">
+                                <rect key="frame" x="61" y="474" width="252" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <size key="titleShadowOffset" width="0.0" height="1"/>
+                                <state key="normal" title="Inicia sesion con facebook"/>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pCm-ZA-y8b">
+                                <rect key="frame" x="67" y="122" width="240" height="272"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="ygb-cY-VbO"/>
                     </view>
                     <navigationItem key="navigationItem" id="xAq-mD-xQB"/>
                     <connections>
+                        <outlet property="imageUserFB" destination="pCm-ZA-y8b" id="2ad-go-evf"/>
+                        <outlet property="loginButton" destination="dRk-wW-Zgz" id="9oR-G6-hPe"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="maps" id="N1c-Nl-m4G"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ln4-SM-YZT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1684" y="-403"/>
+            <point key="canvasLocation" x="-1684" y="-403.44827586206901"/>
         </scene>
         <!--Item-->
         <scene sceneID="AUD-gk-Awd">
@@ -218,29 +232,42 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="nr7-ul-Ajo">
-                                <rect key="frame" x="2" y="20" width="375" height="571"/>
+                                <rect key="frame" x="2" y="20" width="375" height="581"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </mapView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qzS-6G-2AX">
-                                <rect key="frame" x="160" y="552" width="81" height="95"/>
+                                <rect key="frame" x="147" y="552" width="81" height="95"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="btn_localizar_on"/>
                                 <connections>
                                     <action selector="localizame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HZT-IH-Ewq"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Avh-18-NxD">
+                                <rect key="frame" x="254" y="64" width="121" height="114"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nombres de facebook" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uZq-VK-WI9">
+                                <rect key="frame" x="0.0" y="642" width="377" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="maps" destination="nr7-ul-Ajo" id="RPT-YZ-LDb"/>
+                        <outlet property="namesFacebook" destination="uZq-VK-WI9" id="bjd-mJ-6BT"/>
+                        <outlet property="photoFacebook" destination="Avh-18-NxD" id="2wC-fW-koa"/>
                         <segue destination="uEg-Vz-VQZ" kind="show" identifier="garage" id="nKj-Pq-TjS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1684" y="412"/>
+            <point key="canvasLocation" x="-1684" y="411.544227886057"/>
         </scene>
         <!--Detail Parking View Controller-->
         <scene sceneID="Pjh-EW-qrn">
